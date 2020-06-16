@@ -1,0 +1,12 @@
+image:
+  file: .gitpod.dockerfile
+
+ports:
+  - port: 8000
+    onOpen: ignore
+  - port: 3306
+    onOpen: ignore
+
+tasks:
+  - init: bash .gitpod-init.sh
+    command: php -S localhost:8000 -t public
