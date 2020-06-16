@@ -4,11 +4,16 @@
 
 ## About this project
 
-Gitpod is an online, in-browser code editor for a cloud Linux server. It allows you to edit and test your database-driven websites all within your browser. There is a Chrome browser extension, which automatically provides a "Gitpod" button for your Github projects, or you can manually add a Gitpod URL to your project's README (which we'll do below - either or both approachesa are fine).
-
-
+Gitpod is an online, in-browser code editor for a cloud Linux server. It allows you to edit and test your database-driven websites all within your browser. 
 
 ![Project running in Gitpod](screenshots/movie-category.png)
+
+
+There is a Chrome browser extension, which automatically provides a "Gitpod" button for your Github projects, or you can manually add a Gitpod URL to your project's README (which we'll do below - either or both approachesa are fine).
+
+![Chome extension Gitpod button](screenshots/chrome_button.png)
+
+
 
 - add a Gitpod link to the top of your `README.md` file. Add the following code:
 
