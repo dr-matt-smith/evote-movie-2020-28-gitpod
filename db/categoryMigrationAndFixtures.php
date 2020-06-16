@@ -7,8 +7,7 @@ use Tudublin\CategoryRepository;
 $categoryRespository = new CategoryRepository();
 
 // (1) drop then create table
-$categoryRespository->dropTable();
-$categoryRespository->createTable();
+$categoryRespository->resetTable();
 
 // (2) delete any existing objects
 $categoryRespository->deleteAll();
@@ -26,5 +25,5 @@ $c2->setDescription('animated family fun');
 
 
 // (4) insert objects into DB
-$categoryRespository->create($c1);
-$categoryRespository->create($c2);
+$categoryRespository->insert($c1);
+$categoryRespository->insert($c2);

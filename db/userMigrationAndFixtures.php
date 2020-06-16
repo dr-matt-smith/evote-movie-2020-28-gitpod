@@ -7,8 +7,7 @@ use Tudublin\User;
 //--------- MOVIE ---------
 // (1) drop then create table
 $userRepository = new UserRepository();
-$userRepository->dropTable();
-$userRepository->createTable();
+$userRepository->resetTable();
 
 // (2) delete any existing objects
 $userRepository->deleteAll();
@@ -24,8 +23,8 @@ $u2->setPassword('admin');
 $u2->setRole('ROLE_ADMIN');
 
 // (3) insert objects into DB
-$userRepository->create($u1);
-$userRepository->create($u2);
+$userRepository->insert($u1);
+$userRepository->insert($u2);
 
 //// (4) test objects are there
 //$users = $userRepository->findAll();

@@ -23,7 +23,7 @@ class AdminController extends Controller
         $user->setUsername($username);
         $user->setPassword($password);
 
-        $this->userRepository->create($user);
+        $this->userRepository->insert($user);
 
         $movieController = new MovieController();
         $movieController->listMovies();

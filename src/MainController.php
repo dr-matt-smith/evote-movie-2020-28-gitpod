@@ -25,7 +25,7 @@ class MainController extends Controller
                 $comment->setUserId($loggedInUser->getId());
             }
 
-            $this->commentRepository->create($comment);
+            $this->commentRepository->insert($comment);
         }
 
         // display list of movies (and comments)

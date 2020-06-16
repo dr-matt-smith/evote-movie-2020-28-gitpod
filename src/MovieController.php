@@ -86,7 +86,7 @@ class MovieController extends Controller
 
         } else {
             // add movie to DB & list movies
-            $this->movieRepository->create($movie);
+            $this->movieRepository->insert($movie);
             $this->listMovies();
         }
     }
