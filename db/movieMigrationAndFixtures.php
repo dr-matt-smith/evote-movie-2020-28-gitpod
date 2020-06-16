@@ -59,11 +59,11 @@ $m5->setVoteTotal(95 * 201);
 $m5->setNumVotes(201);
 
 // (4) insert objects into DB
-$movieRespository->create($m1);
-$movieRespository->create($m2);
-$movieRespository->create($m3);
-$movieRespository->create($m4);
-$movieRespository->create($m5);
+$movieRespository->insert($m1);
+$movieRespository->insert($m2);
+$movieRespository->insert($m3);
+$movieRespository->insert($m4);
+$movieRespository->insert($m5);
 
 //// (5) test objects are there
 $movies = $movieRespository->findAll();

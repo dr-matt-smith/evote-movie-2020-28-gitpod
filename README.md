@@ -86,7 +86,7 @@ There is a Chrome browser extension, which automatically provides a "Gitpod" but
 ![Click to open Gitpod VM](screenshots/open_repo_in_gitpod.png)
 
 
-- the Gitpod environment should then startup - it may take a minute or two to start the VM and open the editor
+- the Gitpod environment should then startup - it may take a minute or two to start the VM, initialise the environment, run the startup scripts, and open the editor
 
 ![Gitpod VM starting up](screenshots/gitpod_starting.png)
 
