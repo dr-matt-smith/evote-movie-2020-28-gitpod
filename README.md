@@ -79,3 +79,15 @@ There is a Chrome browser extension, which automatically provides a "Gitpod" but
     
     - finally, the `db/resetDatabase.php` script is executed, which should result in the database, tables, and table data being created
     
+- commit and push the changes to Github    
+
+- you can now open the Github rep:
+
+![Click to open Gitpod VM](screenshots/open_repo_in_gitpod.png)
+
+
+- the Gitpod environment should then startup - it may take a minute or two to start the VM and open the editor
+
+![Gitpod VM starting up](screenshots/gitpod_starting.png)
+
+
