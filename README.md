@@ -6,7 +6,7 @@
 
 Gitpod is an online, in-browser code editor for a cloud Linux server. It allows you to edit and test your database-driven websites all within your browser. 
 
-![Project running in Gitpod](screenshots/movie-category.png)
+![Project running in Gitpod](screenshots/1_running_gitpod.png)
 
 
 There is a Chrome browser extension, which automatically provides a "Gitpod" button for your Github projects, or you can manually add a Gitpod URL to your project's README (which we'll do below - either or both approachesa are fine).
@@ -67,11 +67,11 @@ There is a Chrome browser extension, which automatically provides a "Gitpod" but
     
 - create the Bash shell command file `.gitpod-init.sh`:
 
-```bash
-    composer install
-    mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'passpass'"
-    php db/resetDatabase.php
-```
+    ```bash
+        composer install
+        mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'passpass'"
+        php db/resetDatabase.php
+    ```
 
     - this runs the Composer `install` command, populating the `/vendor` directory with 3rd-party libraries listed in `composer.json`
     
@@ -89,5 +89,26 @@ There is a Chrome browser extension, which automatically provides a "Gitpod" but
 - the Gitpod environment should then startup - it may take a minute or two to start the VM, initialise the environment, run the startup scripts, and open the editor
 
 ![Gitpod VM starting up](screenshots/gitpod_starting.png)
+
+
+- the Gitpod environemt looks like this:
+
+![Project running in Gitpod](screenshots/1_running_gitpod.png)
+
+- check there were no errors ('Problems'):
+
+![no problems](screenshots/2_problems.png)
+
+- open the project a web browser 
+
+![open in web browser](screenshots/3_preview.png)
+
+---
+
+## Pushing changes to Github repo
+
+If you make changes to files in your Gitpod Workspace, they will not automatically update your Github repostory.
+
+To commit and push changes to Github, use the Git tools:
 
 
