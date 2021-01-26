@@ -111,4 +111,12 @@ If you make changes to files in your Gitpod Workspace, they will not automatical
 
 To commit and push changes to Github, use the Git tools:
 
+---
 
+## Jan 2021 - fix issues
+
+I'm not sure why, but I found it necessary to reset the MySQL root password, rerun the DB setup and run the web server before things would work just now.
+
+Here is a step-by-step screenshot of what it took to get working this time:
+
+![open in web browser](screenshots/2021_fixes.png)
