@@ -120,3 +120,18 @@ I'm not sure why, but I found it necessary to reset the MySQL root password, rer
 Here is a step-by-step screenshot of what it took to get working this time:
 
 ![open in web browser](screenshots/2021_fixes.png)
+
+
+## Oct 2021 - different in-browser Gitpd editor
+
+Things seem to have changed
+
+to get thigns working I did the following:
+
+- ran `gp url 8000` in the terminal, to find the exposed URL for the running webserver
+
+- opened a new browser tab to the exposed URL
+
+- then I could test it fine
+
+it seems the built-in browser tab isn't available by default / the Ports tab seems to have gone away (I think Gitpod have a new version of VSCode to work in web browsers, rather than a special one for running Gitpod virtual machines ...)
